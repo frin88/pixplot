@@ -10,6 +10,6 @@ data/thumbs --> contiene le stesse immagini ridimensionate, mi sembra che serva 
 
 ## parametri algoritmo UMAP
 Le coordinate attuali sono generate con i parametri <br>
-n_neighbors: 7 <br>
+n_neighbors: 5 <br>
 min_dist: 0.2
 
