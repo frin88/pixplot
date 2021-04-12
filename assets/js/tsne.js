@@ -774,7 +774,8 @@ function World() {
 
 World.prototype.getScene = function() {
   var scene = new THREE.Scene();
-  scene.background = new THREE.Color(0x111111);
+  //CAMBIO COLORE BACKGROUND
+  //scene.background = new THREE.Color(0x111111);
   return scene;
 }
 
@@ -804,6 +805,7 @@ World.prototype.getRenderer = function() {
   return new THREE.WebGLRenderer({
     antialias: true,
     canvas: this.canvas,
+    alpha:true  //CAMBIO COLORE BACKGROUND --> enable transparency
   });
 }
 

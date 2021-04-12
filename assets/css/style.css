@@ -13,7 +13,7 @@ canvas {
 
 body,
 html {
-  background: #111;
+  background: #111; 
   touch-action: none;
 }
 
@@ -116,6 +116,7 @@ select:disabled {
 #pixplot-canvas {
   height: 100%;
   width: 100%;
+  background-image:linear-gradient( #92B5B7 , #BEA95E, #573C46);
 }
 
 #pixplot-canvas.pan {
