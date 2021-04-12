@@ -3616,19 +3616,19 @@ function Welcome() {
   this.progressElem = document.querySelector('#progress');
   this.loaderTextElem = document.querySelector('#loader-text');
   this.loaderSceneElem = document.querySelector('#loader-scene');
-  this.buttonElem = document.querySelector('#enter-button');
-  this.buttonElem.addEventListener('click', this.onButtonClick.bind(this));
+  // this.buttonElem = document.querySelector('#enter-button');
+  // this.buttonElem.addEventListener('click', this.onButtonClick.bind(this));
 }
 
-Welcome.prototype.onButtonClick = function(e) {
-  if (e.target.className.indexOf('active') > -1) {
-    requestAnimationFrame(function() {
-      this.removeLoader(function() {
-        this.startWorld();
-      }.bind(this));
-    }.bind(this));
-  }
-}
+// Welcome.prototype.onButtonClick = function(e) {
+//   if (e.target.className.indexOf('active') > -1) {
+//     requestAnimationFrame(function() {
+//       this.removeLoader(function() {
+//         this.startWorld();
+//       }.bind(this));
+//     }.bind(this));
+//   }
+// }
 
 Welcome.prototype.removeLoader = function(onSuccess) {
   var blocks = document.querySelectorAll('.block');
@@ -3655,7 +3655,15 @@ Welcome.prototype.updateProgress = function() {
   if (progress == 100 &&
       data.loadedTextures == data.textureCount &&
       world.heightmap) {
-    this.buttonElem.className += ' active';
+
+    // start world when textures are loaded 
+    requestAnimationFrame(function() {
+      this.removeLoader(function() {
+        this.startWorld();
+      }.bind(this));
+    }.bind(this));
+   
+  // this.buttonElem.className += ' active';
   }
 }
 
