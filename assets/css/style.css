@@ -91,6 +91,7 @@ select:disabled {
 
 #canvas-target {
   position: absolute;
+ 
   top: -60px;
   right: -90px;
   bottom: -90px;
@@ -114,21 +115,24 @@ select:disabled {
 }
 
 #pixplot-canvas {
-  height: 100%;
-  width: 100%;
-  /* background-image:linear-gradient( #92B5B7 , #BEA95E, #573C46); */
+  /* height: 100%;
+  width: 100%; */
+  height: 80%;
+  width: 80%;
+  /* border:2px solid deeppink; */
+ background-image:linear-gradient( #92B5B7 , #BEA95E, #573C46); 
 }
 
 #pixplot-canvas.pan {
-  cursor: grab;
+  /* cursor: grab; */
 }
 
 #pixplot-canvas.pan:active {
-  cursor: grabbing;
+  /* cursor: grabbing; */
 }
 
 #pixplot-canvas.select {
-  cursor: crosshair;
+  /* cursor: crosshair; */
 }
 
 #stats {
