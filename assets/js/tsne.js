@@ -744,6 +744,7 @@ Layout.prototype.onTransitionComplete = function() {
 
 function World() {
   this.canvas = document.querySelector('#pixplot-canvas');
+  this.canvasDisclaimer = document.querySelector("#canvas-disclaimer")
   this.scene = this.getScene();
   this.camera = this.getCamera();
   this.renderer = this.getRenderer();

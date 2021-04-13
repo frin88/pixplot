@@ -89,6 +89,16 @@ select:disabled {
   overflow: hidden;
 }
 
+#canvas-disclaimer {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
 #canvas-target {
   position: absolute;
  
@@ -120,11 +130,11 @@ select:disabled {
   height: 80%;
   width: 80%;
   /* border:2px solid deeppink; */
- background-image:linear-gradient( #92B5B7 , #BEA95E, #573C46); 
+ background-image:linear-gradient(90deg, #92B5B7 , #BEA95E, #573C46); 
 }
 
 #pixplot-canvas.pan {
-  /* cursor: grab; */
+  cursor: grab;
 }
 
 #pixplot-canvas.pan:active {
