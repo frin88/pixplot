@@ -420,7 +420,7 @@
     <div id='tooltip'></div>
     <!-- Loader -->
     <div id='loader-scene'>
-      <p class='welcome'>This page visualizes a large image collection within an interactive WebGL scene. Each image was processed with an <a href='https://arxiv.org/abs/1409.4842' target='_blank'>Inception</a> Convolutional Neural Network, trained on <a href='http://image-net.org/challenges/LSVRC/2012/' target='_blank'>ImageNet 2012</a>, and projected into a two-dimensional manifold with the <a href='https://github.com/lmcinnes/umap' target='_blank'>UMAP</a> algorithm such that similar images appear proximate to one another.</p>
+      <!-- <p class='welcome'>This page visualizes a large image collection within an interactive WebGL scene. Each image was processed with an <a href='https://arxiv.org/abs/1409.4842' target='_blank'>Inception</a> Convolutional Neural Network, trained on <a href='http://image-net.org/challenges/LSVRC/2012/' target='_blank'>ImageNet 2012</a>, and projected into a two-dimensional manifold with the <a href='https://github.com/lmcinnes/umap' target='_blank'>UMAP</a> algorithm such that similar images appear proximate to one another.</p> -->
       <div class='loader-container'>
         <div class='loader-icon'>
           <div class='blocks'>
@@ -439,10 +439,11 @@
           <span id='progress'>0%</span>
         </div>
       </div>
-      <button id='enter-button'>Enter</button>
+      <!-- <button id='enter-button'>Enter</button> -->
     </div>
     <!-- Canvas -->
-    <div id='canvas-container'>
+    <div id='canvas-container' >
+      <div id='canvas-disclaimer'> Please use Shift + mouse wheel to zoom</div>
       <div id='canvas-target'>
         <canvas id='pixplot-canvas' />
       </div>
@@ -621,7 +622,8 @@
     <script type='text/javascript' src='assets/vendor/dist/lodash.min.js'></script>
     <script type='text/javascript' src='assets/js/object-assign-polyfill.js'></script>
     <script type='text/javascript' src='assets/vendor/dist/gsap.min.js'></script>
-    <script type='text/javascript' src='assets/vendor/dist/trackball-controls.min.js'></script>
+    <!-- <script type='text/javascript' src='assets/vendor/dist/trackball-controls.min.js'></script> -->
+    <script type='text/javascript' src='assets/vendor/src/trackball-controls.js'></script>
     <script type='text/javascript' src='assets/vendor/dist/stats.min.js'></script>
     <script type='text/javascript' src='assets/vendor/dist/gunzip.min.js'></script>
     <script type='text/javascript' src='assets/vendor/dist/papaparse.min.js'></script>

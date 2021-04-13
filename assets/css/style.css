@@ -13,7 +13,7 @@ canvas {
 
 body,
 html {
-  background: #111;
+  background: #111; 
   touch-action: none;
 }
 
@@ -89,8 +89,19 @@ select:disabled {
   overflow: hidden;
 }
 
+#canvas-disclaimer {
+  position: absolute;
+  display: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
 #canvas-target {
   position: absolute;
+ 
   top: -60px;
   right: -90px;
   bottom: -90px;
@@ -114,8 +125,12 @@ select:disabled {
 }
 
 #pixplot-canvas {
-  height: 100%;
-  width: 100%;
+  /* height: 100%;
+  width: 100%; */
+  height: 80%;
+  width: 80%;
+  /* border:2px solid deeppink; */
+ background-image:linear-gradient(90deg, #92B5B7 , #BEA95E, #573C46); 
 }
 
 #pixplot-canvas.pan {
@@ -123,11 +138,11 @@ select:disabled {
 }
 
 #pixplot-canvas.pan:active {
-  cursor: grabbing;
+  /* cursor: grabbing; */
 }
 
 #pixplot-canvas.select {
-  cursor: crosshair;
+  /* cursor: crosshair; */
 }
 
 #stats {
@@ -142,6 +157,7 @@ select:disabled {
 **/
 
 #header-container {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -588,6 +604,7 @@ input[type=range]::-ms-thumb {
 **/
 
 nav {
+  display: none;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -1355,10 +1372,11 @@ noscript {
 **/
 
 #selection-icons {
+  display: none;
   position: absolute;
   bottom: 10px;
   right: 12px;
-  display: inline-block;
+  /* display: inline-block; */
   width: 30px;
   padding: 0 5px;
   background: #333;
